@@ -57,6 +57,10 @@
 					(adsbygoogle = window.adsbygoogle || []).push({});
 					</script>
 			</div>
+			
+			<!--<a href="javascript:void(0);" id="fbshare">compartir</a>
+			<a href="javascript:void(0);" id="fbinvitar">invitar amigos</a>-->
+
 			<div id="fb-root"></div>
 			<script>
 					window.fbAsyncInit = function() {

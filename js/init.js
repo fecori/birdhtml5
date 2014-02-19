@@ -310,14 +310,23 @@ function init() {
 	}
 
 	var descrip, img, link, titulo, uriEncode, url;
-	titulo = "Flappy Bird en Facebook";
+	/*titulo = "Flappy Bird en Facebook";
 	descrip = "Hice " + countText +  " Flappy Bird en Facebook!!, juegalo que esperas!!!";
 	img = "https://friki.pe/flappy-bird-peru/img/apple-icon.png";
 	url = "https://apps.facebook.com/flappy-bird-facebook/";
 	link = "http://www.facebook.com/sharer.php?s=100" + "&p[url]=" + url + "&p[title]=" + titulo + "&p[summary]=" + descrip + "&&p[images][0]=" + img;
 	uriEncode = encodeURI(link);
 
-	WinOpen(uriEncode, "scrollbars=no", 590, 458);
+	WinOpen(uriEncode, "scrollbars=no", 590, 458);*/
+
+	FB.ui({
+	  method: 'feed',
+	  link: 'https://apps.facebook.com/flappy-bird-facebook/',
+	  picture : 'http://friki.pe/flappy-bird-peru/img/apple-icon.png',
+	  name: 'Flappy Bird en Facebook',
+	  caption: 'Diviertete!!!',
+	  description: "Hice " + countText +  " Flappy Bird en Facebook!!, juegalo que esperas!!!"
+	}, function(response){});
 
 	//window.open("https://twitter.com/share?url=https%3A%2F%2Fapps.facebook.com%2Fflappy-bird-peru%2F&text=Hice " + countText +  " Flappy Bird en Facebook!!.");
 	}
@@ -424,5 +433,16 @@ function init() {
 }
 
 init();
+
+$("#fbshare").on('click', function(){
+	FB.ui({
+	  method: 'feed',
+	  link: 'https://developers.facebook.com/docs/dialogs/',
+	  picture : 'https://friki.pe/flappy-bird-peru/img/apple-icon.png',
+	  name: 'Name??',
+	  caption: 'An example caption',
+	  description: 'La descrip bla bla bla'
+	}, function(response){});
+})
 
 });
