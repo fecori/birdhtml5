@@ -1,45 +1,42 @@
 @font-face {
-  font-family: 'Flappy Bird';
-  src: url('../fonts/FB.eot');
-  src: url('../fonts/FB.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/FB.woff') format('woff'),
-       url('../fonts/FB.ttf') format('truetype'),
-       url('../fonts/FB.svg#04b_19regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Flappy Bird';
+	src: url('../fonts/FB.eot');
+	src: url('../fonts/FB.eot?#iefix') format('embedded-opentype'), url('../fonts/FB.woff') format('woff'), url('../fonts/FB.ttf') format('truetype'), url('../fonts/FB.svg#04b_19regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 body, html {
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
-  height: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	height: 100%;
 }
 canvas {
-  position: relative;
-  z-index: 1;
-  width: 768px;
-  height: 768px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+	position: relative;
+	z-index: 1;
+	width: 768px;
+	height: 768px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .filler {
-  width: 728px;
-  height: 90px;
+	width: 728px;
+	height: 90px;
 }
 .top.filler {
-  position: relative;
-  top: 0;
-  left: 50%;
-  margin-left: -364px;
-  z-index: 2;
+	position: relative;
+	top: 0;
+	left: 50%;
+	margin-left: -364px;
+	z-index: 2;
 }
 .bottom.filler {
-  position: relative;
-  bottom: 108px;
-  z-index: 2;
-  left: 50%;
-  margin-left: -364px;
+	position: relative;
+	bottom: 108px;
+	z-index: 2;
+	left: 50%;
+	margin-left: -364px;
 }
 .ad-container {
-  z-index: 0;
+	z-index: 0;
 }
